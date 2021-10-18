@@ -2,8 +2,10 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
+import useAuth from '../../Hooks/useAuth'
 
 const Header = () => {
+    const {user, logout} = useAuth()
     return (
         <div>
             <Navbar bg="dark" variant="dark">
@@ -36,7 +38,11 @@ const Header = () => {
                             >
                             About
                         </NavLink>
-                        <NavLink
+                        <p className="text-danger">{user.displayName}</p>
+                       
+                        {
+                            user.email? <button onClick={logout}>Logout</button>
+                            :  <NavLink
                             to="/login"
                             activeStyle={{
                                 fontWeight: "bold",
@@ -45,6 +51,7 @@ const Header = () => {
                             >
                             Login
                         </NavLink>
+                        }
                     </Nav>
                 </Container>
             </Navbar>
