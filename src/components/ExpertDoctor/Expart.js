@@ -10,11 +10,22 @@ const Expart = () => {
       
         <Container className="mt-3 mb-3">
             <h3>Meets Out Expert Doctors</h3>
-            <Row >
+            {/* <Row >
             <Col sm><img src={img1} alt="" /></Col>
             <Col sm><img src={img2} alt="" /></Col>
             <Col sm><img src={img3} alt="" /></Col>
-            </Row>
+            </Row>*/}
+            <Row> 
+    <Col xs={12} md={4}>
+    <img src={img1} alt="" />
+    </Col>
+    <Col xs={12} md={4}>
+    <img src={img2} alt="" />
+    </Col>
+    <Col xs={12} md={4}>
+    <img src={img3} alt="" />
+    </Col>
+  </Row>
       </Container>
     );
 };

@@ -10,7 +10,6 @@ const Contact = () => {
             Noman Society <br/>
             East Nasirabad, Khulshi
             Chattogram: 420<br/>
-            Phone : + 88 0963 81444547 
             Phone : + 88 01714 1020787
             Phone : +88 0312-558784</p>
         </div>
