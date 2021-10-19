@@ -3,17 +3,19 @@ import './Expert.css'
 import img1 from "../../image/expart1.jpg"
 import img2 from "../../image/expart2.jpg"
 import img3 from "../../image/expart3.jpg"
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Expart = () => {
     return (
-        <div className="mt-3">
-            <h3>Our Expert Doctors</h3>
-            <div className="doctor">
-                <div><img src={img1} alt="" /></div>
-                <div><img src={img2} alt="" /></div>
-                <div><img src={img3} alt="" /></div>
-            </div>
-        </div>
+      
+        <Container className="mt-3 mb-3">
+            <h3>Meets Out Expert Doctors</h3>
+            <Row >
+            <Col sm><img src={img1} alt="" /></Col>
+            <Col sm><img src={img2} alt="" /></Col>
+            <Col sm><img src={img3} alt="" /></Col>
+            </Row>
+      </Container>
     );
 };
 
