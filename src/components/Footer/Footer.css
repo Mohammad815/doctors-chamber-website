@@ -1,0 +1,24 @@
+.blog{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    
+}
+ul{
+    list-style: none;
+    text-align: left;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding:4px;
+    background-color:#17a2b8;
+    text-align:center;
+    color:white;
+}
+.main-wrapper {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 7.5rem;
+   }

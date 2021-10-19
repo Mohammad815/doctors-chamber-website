@@ -4,6 +4,7 @@ import './App.css';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Details from './components/Details/Details';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
@@ -11,6 +12,7 @@ import NotFound from './components/NotFound/NotFound';
 import Register from './components/Resister/Register';
 import Services from './components/Services/Services';
 import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -40,13 +42,14 @@ function App() {
            <Route exact path="/register">
              <Register></Register>
            </Route>
-           <Route exact path="/detail/:id">
+           <PrivateRoute exact path="/detail/:id">
              <Details></Details>
-           </Route>
+           </PrivateRoute>
            <Route exact path="*">
              <NotFound></NotFound>
            </Route>
          </Switch>
+         {/* <Footer></Footer> */}
        </Router>
        </AuthProvider>
     </div>
