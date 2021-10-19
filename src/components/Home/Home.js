@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
+import Banner from '../Banner/Banner';
 import ChamberDemo from '../ChamberDemo/ChamberDemo';
 
 const Home = () => {
@@ -15,7 +16,8 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Our Services</h1>
+            <Banner></Banner>
+            <h3 className="mt-3">Our Services</h3>
             <div className="container mt-3">
             <Row xs={1} md={2} className="g-4">
             

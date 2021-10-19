@@ -2,6 +2,7 @@ import React from 'react';
 import {useState,useEffect } from 'react'
 import {Container,Row} from 'react-bootstrap'
 import Service from '../Service/Service';
+import './Service.css'
 
 const Services = () => {
     const [doctors, setdoctors]=useState([]);
