@@ -8,7 +8,7 @@ ul{
     list-style: none;
     text-align: left;
 }
-footer {
+/* footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -21,4 +21,4 @@ footer {
     position: relative;
     min-height: 100vh;
     padding-bottom: 7.5rem;
-   }
+   } */

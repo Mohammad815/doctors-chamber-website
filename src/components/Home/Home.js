@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
+import Expart from '../ExpertDoctor/Expart';
 import Banner from '../Banner/Banner';
 import ChamberDemo from '../ChamberDemo/ChamberDemo';
 
@@ -26,6 +27,7 @@ const Home = () => {
             }
         </Row>
         </div>  
+        <Expart></Expart>
         </div>
     );
 };

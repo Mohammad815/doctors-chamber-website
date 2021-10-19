@@ -13,15 +13,10 @@ const Login = () => {
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home'
-    
-
     const handleGoogleLogin = () => {
       SignWithGoogle()
       .then((result) => {
-            
           history.push(redirect_uri)
-           
-
         })
     }
 

@@ -7,9 +7,9 @@ import useAuth from '../../Hooks/useAuth'
 const Header = () => {
     const {user, logout} = useAuth()
     return (
-        <div>
+        <div >
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
-                <Container >
+                <Container className="p-3">
                             <NavLink className="nav"
                                 to="/home"
                                 activeStyle={{
