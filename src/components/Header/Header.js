@@ -49,6 +49,15 @@ const Header = () => {
                                 >
                                 About
                             </NavLink>
+                            <NavLink
+                                to="/contact" className="nav"
+                                activeStyle={{
+                                    fontWeight: "bold",
+                                    color: "red"
+                                }}
+                                >
+                                Contact
+                            </NavLink>
                             <p className="text-danger">{user.displayName}</p>
                         
                             {

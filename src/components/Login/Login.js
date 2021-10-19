@@ -34,16 +34,12 @@ const Login = () => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control onChange={hanldePassword} type="password" placeholder="Password" />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
                 <Button onClick={handleLogin} variant="primary" type="submit">
                     Submit
                 </Button>
         </Form>
         <p>Create account ? <Link to="/register">Register</Link></p>
         <div>
-            ---------------OR------------ <br/>
             <button onClick={SignWithGoogle}>Google Sign In</button>
         </div>
             </div>
