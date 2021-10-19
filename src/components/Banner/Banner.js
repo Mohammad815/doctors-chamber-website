@@ -7,7 +7,7 @@ import img3 from '../../image/img3.jpg'
 
 const Banner = () => {
     return (
-        <div className="mt-3">
+        <div className="mt-">
             <Container>
             <Carousel>
   <Carousel.Item interval={1000}>
