@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form,Button, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link,useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 
@@ -9,6 +9,22 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
     const {SignWithGoogle,handleUserLogin}=useAuth();
+   
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home'
+    
+
+    const handleGoogleLogin = () => {
+      SignWithGoogle()
+      .then((result) => {
+            
+          history.push(redirect_uri)
+           
+
+        })
+    }
+
     const hanldeEmail = (e) => {
         setEmail(e.target.value);
       };
@@ -40,7 +56,7 @@ const Login = () => {
         </Form>
         <p>Create account ? <Link to="/register">Register</Link></p>
         <div>
-            <button onClick={SignWithGoogle}>Google Sign In</button>
+            <button onClick={handleGoogleLogin}>Google Sign In</button>
         </div>
             </div>
            </Container>
