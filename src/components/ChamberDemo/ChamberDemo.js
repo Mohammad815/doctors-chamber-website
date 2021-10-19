@@ -14,10 +14,6 @@ const ChamberDemo = (props) => {
                 <Card.Title>Doctors Name : {name} </Card.Title>
                 <Card.Text>
                     <h5>Description: {Description}</h5>
-                
-                    
-
-
                 </Card.Text>
                 </Card.Body>
             </Card>

@@ -10,11 +10,19 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
                 <Container >
-                    <Navbar.Brand>Health Care</Navbar.Brand>
+                            <NavLink className="nav"
+                                to="/home"
+                                activeStyle={{
+                                    fontWeight: "bold",
+                                    color: "red"
+                                }}
+                                >
+                                Health Care
+                            </NavLink>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         
-                            <NavLink
+                            <NavLink className="nav"
                                 to="/home"
                                 activeStyle={{
                                     fontWeight: "bold",
@@ -24,7 +32,7 @@ const Header = () => {
                                 Home
                             </NavLink>
                             <NavLink
-                                to="/services"
+                                to="/services" className="nav"
                                 activeStyle={{
                                     fontWeight: "bold",
                                     color: "red"
@@ -33,7 +41,7 @@ const Header = () => {
                                 Services
                             </NavLink>
                             <NavLink
-                                to="/about"
+                                to="/about" className="nav"
                                 activeStyle={{
                                     fontWeight: "bold",
                                     color: "red"
@@ -46,7 +54,7 @@ const Header = () => {
                             {
                                 user.email? <button onClick={logout}>Logout</button>
                                 :  <NavLink
-                                to="/login"
+                                to="/login" className="nav"
                                 activeStyle={{
                                     fontWeight: "bold",
                                     color: "red"

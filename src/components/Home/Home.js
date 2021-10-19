@@ -17,7 +17,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <h3 className="mt-3">Our Services</h3>
+            <h3 className="mt-4">Our Services</h3>
             <div className="container mt-3">
             <Row xs={1} md={2} className="g-4">
             
