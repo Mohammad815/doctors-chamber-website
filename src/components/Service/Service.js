@@ -16,7 +16,7 @@ const Service = (props) => {
                     <p>Description : {Description}</p>
                     </Card.Text>
                 </Card.Body>
-                <Link to={`/detail/${Id}`}><button>Show Details</button></Link>
+                <Link to={`/detail/${Id}`} className="text-primary">fh</Link>
             </Card>
     </Col>
     );

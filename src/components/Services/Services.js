@@ -16,7 +16,7 @@ const Services = () => {
     return (
         
         <Container>
-            <Row xs={1} md={2} className="g-4">
+            <Row xs={1} md={2} className="g-3">
                 {
                     doctors.map(data=><Service data={data} key={data.Id}></Service>)
                 }

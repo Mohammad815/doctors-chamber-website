@@ -16,11 +16,11 @@ const Home = () => {
     console.log(doctors)
 
     return (
-        <div>
+        <div className=''>
             <Banner></Banner>
-            <h3 className="mt-4">Our Services</h3>
+            <h3 className="mt-4 mb-3 fs-1">Our Services</h3>
             <div className="container mt-3">
-            <Row xs={1} md={2} className="g-4">
+            <Row xs={1} md={3} className="g-4">
             
             {
                 doctors.map(chamber=><ChamberDemo chamber={chamber} unique={chamber.Id} ></ChamberDemo>)
